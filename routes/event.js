@@ -10,6 +10,13 @@ module.exports = (router) => {
         .get(eventController.getAll)
 
     /**
+     * get all events
+     */
+    router
+    .route('/events/highlighted')
+    .get(eventController.getHighlighted)
+
+    /**
      * add event
      */
     router

@@ -19,6 +19,21 @@ module.exports = {
                 }
             })
     },
+    
+    /***
+    ***GET HIGHLIGHTED EVENTS
+    ***/
+   getHighlighted: (req,res,next) => {
+    Event.find({highlighted:true}, function(err,events){
+        if (err)
+            res.send(err)
+        else if (!events)
+            res.send(404)
+        else {
+            res.send(JSON.stringify(events));
+        }
+    })
+    },
     addEvent: (req,res,next) => {
         
         /***
