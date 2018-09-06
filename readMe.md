@@ -32,3 +32,11 @@ The app has the following services
 * [Event list](#event-list)
 * [Get event by id](#get-event-by-id)
 * [Create event](#create-event)
+
+## Doubuts
+
+Contact me matiguz1990@gmail.com.
+
+## Next Step
+
+Enjoy your app.
