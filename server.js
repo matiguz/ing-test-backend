@@ -11,8 +11,7 @@ const routes = require('./routes/')
 
 var app = express();
 const router = express.Router();
-//const url = process.env.MONGODB_URI || "mongodb://test_dev:test1234@ds247852.mlab.com:47852/test-ingeniuos";
-const url = process.env.MONGODB_URI || "mongodb://localhost/mdb";
+const url = process.env.MONGODB_URI || "mongodb://test_dev:test1234@ds247852.mlab.com:47852/test-ingeniuos";
 
 dotenv.load();
 
